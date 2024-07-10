@@ -1,8 +1,8 @@
-import { Storage } from `@google-cloud/storage`;
-import ffmpeg from "fluent-ffmpeg";
-import fs from `fs`;
+import { Storage } from "@google-cloud/storage";
+import fs from 'fs';
+import ffmpeg from 'fluent-ffmpeg';
 
-const storage = Storage();
+const storage = new Storage();
 
 const rawVideoBucketName = "dch-yt-raw-videos"
 const processedVideoBucketName = "dch-yt-processed-videos"
