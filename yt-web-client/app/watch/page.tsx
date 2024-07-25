@@ -1,16 +1,15 @@
 'use client';
 
-import { useSearchParams } from "next/navigation";  
+import { useSearchParams } from 'next/navigation'
 
 export default function Watch() {
-  const videoPrefix = 'https://storage.googleapis.com/dch-yt-processed-videos/';
+  const videoPrefix = 'https://storage.googleapis.com/nc-yt-processed-videos/';
   const videoSrc = useSearchParams().get('v');
 
-    return (
-      <div>
-        <p>Watch Page</p>
-        <video controls src={videoPrefix + videoSrc} /> 
-      </div>
-    );
-  }
-  
+  return (
+    <div>
+      <h1>Watch Page</h1>
+      { <video controls src={videoPrefix + videoSrc}/> }
+    </div>
+  );
+}

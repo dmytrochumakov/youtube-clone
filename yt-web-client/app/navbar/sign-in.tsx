@@ -1,5 +1,6 @@
 import { signWithGoogle, signOut } from '../firebase/firebase';
 import styles from './sign-in.module.css';
+import { User } from 'firebase/auth';
 
 interface SignInProps {
   user: User | null;
